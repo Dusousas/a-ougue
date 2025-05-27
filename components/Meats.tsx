@@ -102,7 +102,7 @@ export default function Meats() {
                                     className='w-[300px] h-[200px] object-cover' 
                                     src={item.image} 
                                     alt={item.name}
-                                    onError={(e) => {s
+                                    onError={(e) => {
                                         (e.target as HTMLImageElement).src = '/cardapio/placeholder.jpg';
                                     }}
                                 />
