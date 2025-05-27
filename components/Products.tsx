@@ -106,8 +106,14 @@ export default function Products({ products = defaultProducts }: ProductsProps) 
                             <ProductCard key={product.id} product={product} />
                         ))}
                     </div>
-                    <div className='mt-4 pt-4 border-t border-GreenP'>
-                        <h1 className='text-sm font-semibold uppercase text-center lg:text-left'>Segunda à Sexta - <span className='font-normal text-GrayP '>Das 08:00 ás 19:00</span></h1>
+                    <div className='mt-4 pt-4 border-t border-GreenP lg:flex items-center justify-between'>
+                        <div>
+                            <h1 className='text-sm font-semibold uppercase text-center lg:text-left'>Segunda à Sexta - <span className='font-normal text-GrayP '>Das 08:00 ás 19:00</span></h1>
+                            <h1 className='font-Vast text-3xl text-GreenP mt-2 text-center lg:text-left'>14 9 1234-1234</h1>
+                        </div>
+                        <div className='mt-4 lg:mt-0 flex justify-center'>
+                            <a className='bg-GreenP px-8 py-2 rounded-4xl uppercase tracking-widest text-white' href="">Saiba mais</a>
+                        </div>
                     </div>
                 </article>
             </div>

@@ -17,7 +17,7 @@ export default function Navbar() {
         <>
             {/* Navbar Desktop */}
             <nav className="hidden lg:block">
-                <ul className="flex gap-6 text-lg uppercase  text-BrowP">
+                <ul className="flex gap-6 text-lg uppercase tracking-widest text-BrowP">
                     <a href="#home"><li>Início</li></a>
                     <a href="#about"><li>Sobre</li></a>
                     <a href="#cortes"><li>Cortes</li></a>
