@@ -66,9 +66,9 @@ export default function Meats() {
 
     return (
         <>
-            <section className='py-20 meatsBG bg-[#F7F4EF]'>
+            <section id='cortes' className='py-20 meatsBG bg-[#F7F4EF]'>
                 <div className='maxW'>
-                    <p className='uppercase text-sm font-semibold text-center'>Carnes Premiums</p>
+                    <p className='uppercase text-sm font-semibold text-center tracking-widest'>Carnes Premiums</p>
                     <h1 className='font-Vast uppercase text-RedP text-4xl mt-4 text-center'>Epeciais</h1>
                     <article className='flex flex-wrap gap-4 sm:gap-8 md:gap-12 lg:gap-20 justify-center mb-8 px-4 mt-10'>
                         {categories.map((category) => (

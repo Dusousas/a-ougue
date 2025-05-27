@@ -43,7 +43,7 @@ export default function Loc() {
         <>
             <section className='py-20'>
                 <div className='maxW'>
-                    <p className='uppercase text-sm font-semibold text-center'>Onde estamos?</p>
+                    <p className='uppercase text-sm font-semibold text-center tracking-widest'>Onde estamos?</p>
                     <h1 className='font-Vast uppercase text-RedP text-4xl mt-4 text-center'>Nossas unidades</h1>
 
                     <article className='mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>

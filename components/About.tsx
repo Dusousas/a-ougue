@@ -18,7 +18,7 @@ export default function About() {
                     <div className='flex items-center justify-center'>
                         <img className='' src="/logo-h3.svg" alt="" />
                     </div>
-                    <p className='uppercase text-sm font-semibold mt-8'>Bem-vindo ao SUALOGO</p>
+                    <p className='uppercase text-sm font-semibold mt-8 tracking-widest'>Bem-vindo ao SUALOGO</p>
                     <h1 className='font-Vast uppercase text-RedP text-4xl mt-4'>Referência em carnes nobres e frescas.</h1>
                     <div className='flex items-center justify-center mt-2'>
                         <img src="/dotted-t.svg" alt="" />

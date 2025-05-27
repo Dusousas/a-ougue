@@ -13,6 +13,9 @@ body {
   color: var(--foreground);
   font-family: "Golos Text", sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 .maxW{
   max-width: 1440px;
@@ -28,9 +31,19 @@ body {
   height: 90vh;
 }
 
+.productsBG{
+  background-image: url('/about-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
 .meatsBG{
   background-image: url('/bg.png');
   background-size: cover;
   background-position: center;
   /* background-repeat: no-repeat; */
 }
+
+  

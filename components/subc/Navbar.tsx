@@ -20,8 +20,8 @@ export default function Navbar() {
                 <ul className="flex gap-6 text-lg uppercase  text-BrowP">
                     <a href="#home"><li>Início</li></a>
                     <a href="#about"><li>Sobre</li></a>
-                    <a href="#services"><li>Cortes</li></a>
-                    <a href="#contact"><li>Contato</li></a>
+                    <a href="#cortes"><li>Cortes</li></a>
+                    <a href="#produtos"><li>Produtos</li></a>
                 </ul>
             </nav>
 
@@ -44,8 +44,8 @@ export default function Navbar() {
                     <ul className="flex flex-col items-center gap-8 text-lg uppercase  text-BrowP">
                         <a href="#home" onClick={() => setIsOpen(false)}><li>Início</li></a>
                         <a href="#about" onClick={() => setIsOpen(false)}><li>Sobre</li></a>
-                        <a href="#services" onClick={() => setIsOpen(false)}><li>Cortes</li></a>
-                        <a href="#contact" onClick={() => setIsOpen(false)}><li>Contato</li></a>
+                        <a href="#cortes" onClick={() => setIsOpen(false)}><li>Cortes</li></a>
+                        <a href="#produtos" onClick={() => setIsOpen(false)}><li>Produtos</li></a>
                     </ul>
                 </nav>
             </div>
