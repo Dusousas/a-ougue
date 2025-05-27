@@ -23,7 +23,15 @@ export default function Meats() {
                 name: "Patinho Moído",
                 description: "Carne bovina moída de primeira qualidade"
             },
-
+            {
+                image: "/cardapio/boi.jpg",
+                name: "Patinho Moído",
+                description: "Carne bovina moída de primeira qualidade"
+            }, {
+                image: "/cardapio/boi.jpg",
+                name: "Patinho Moído",
+                description: "Carne bovina moída de primeira qualidade"
+            }
         ],
         porco: [
             {
@@ -60,20 +68,20 @@ export default function Meats() {
         <>
             <section className='py-20 meatsBG bg-[#F7F4EF]'>
                 <div className='maxW'>
-                    {/* Seção dos ícones/categorias */}
-                    <article className='flex flex-wrap gap-4 sm:gap-8 md:gap-12 lg:gap-20 justify-center mb-8 px-4'>
+                    <p className='uppercase text-sm font-semibold text-center'>Carnes Premiums</p>
+                    <h1 className='font-Vast uppercase text-RedP text-4xl mt-4 text-center'>Epeciais</h1>
+                    <article className='flex flex-wrap gap-4 sm:gap-8 md:gap-12 lg:gap-20 justify-center mb-8 px-4 mt-10'>
                         {categories.map((category) => (
-                            <div 
+                            <div
                                 key={category.id}
-                                className={`cursor-pointer transition-all duration-300 transform hover:scale-110 flex flex-col items-center min-w-[80px] ${
-                                    selectedCategory === category.id 
-                                        ? 'opacity-100 scale-110' 
-                                        : 'opacity-70 hover:opacity-100'
-                                }`}
+                                className={`cursor-pointer transition-all duration-300 transform hover:scale-110 flex flex-col items-center min-w-[80px] ${selectedCategory === category.id
+                                    ? 'opacity-100 scale-110'
+                                    : 'opacity-70 hover:opacity-100'
+                                    }`}
                                 onClick={() => setSelectedCategory(category.id)}
                             >
-                                <img 
-                                    src={category.icon} 
+                                <img
+                                    src={category.icon}
                                     alt={category.alt}
                                     className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 object-contain"
                                 />
@@ -84,23 +92,16 @@ export default function Meats() {
                         ))}
                     </article>
 
-                    {/* Título da categoria selecionada */}
-                    <div className="text-center mb-6 sm:mb-8 md:mb-10 px-4">
-                        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 capitalize">
-                            Cardápio - {categories.find(cat => cat.id === selectedCategory)?.name}
-                        </h2>
-                    </div>
-
                     {/* Grid dos itens do cardápio */}
                     <article className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center'>
                         {menuData[selectedCategory]?.map((item, index) => (
-                            <div 
+                            <div
                                 key={index}
                                 className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
                             >
-                                <img 
-                                    className='w-[300px] h-[200px] object-cover' 
-                                    src={item.image} 
+                                <img
+                                    className='w-[300px] h-[200px] object-cover'
+                                    src={item.image}
                                     alt={item.name}
                                     onError={(e) => {
                                         (e.target as HTMLImageElement).src = '/cardapio/placeholder.jpg';
@@ -118,12 +119,12 @@ export default function Meats() {
                                 </div>
                             </div>
                         )) || (
-                            <div className="col-span-full text-center py-20">
-                                <p className="text-gray-500 text-lg">
-                                    Nenhum item disponível para esta categoria
-                                </p>
-                            </div>
-                        )}
+                                <div className="col-span-full text-center py-20">
+                                    <p className="text-gray-500 text-lg">
+                                        Nenhum item disponível para esta categoria
+                                    </p>
+                                </div>
+                            )}
                     </article>
                 </div>
             </section>

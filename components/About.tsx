@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function About() {
     return (
-        <section className="pb-20 lg:pt-30">
-            <div className="maxW flex flex-col-reverse items-center gap-10">
+        <section id='about' className="pb-20 lg:pt-30">
+            <div className="maxW flex flex-col-reverse items-center gap-10 lg:flex-row">
 
                 <article className="flex gap-6 lg:w-1/2">
                     <div className="-mt-10">
